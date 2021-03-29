@@ -151,13 +151,6 @@ within_class_cov <- function(df,means,y,matrix_type="scatter"){
   return(result)
 }
 
-?any
-any(str_detect(names(diamonds),"y"))
-
-get_class_means(diamonds,"cut")
-
-test <- my_lda(diamonds,"cut")
-
 between_class_cov <- function(df,means,y,matrix_type="scatter"){
   dims <- ncol(df)-1
   result <- matrix(0L,dims,dims)

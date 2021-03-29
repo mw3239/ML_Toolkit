@@ -18,7 +18,7 @@ my_lda <- function(df,y,matrix_type="scatter",graph=T){
   lda_check_col_types(df,y)
   
   #There will be problems if any of the predictors have a column named "y"
-  #unless we change it's name.
+  #unless we change its name.
   if(any(str_detect(names(df),"y"))){
     found_new_name <- F
     while(!found_new_name){
